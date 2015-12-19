@@ -1,24 +1,19 @@
-## README
+# Chat with Rails5 beta
+This is an naive chat web application built with Rails 5.0.0 beta1.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running
+You need to run redis before starting `bin/rails s`:
 
-Things you may want to cover:
+```bash
+$ redis-server
+```
 
-* Ruby version
+```bash
+$ bin/rails server
+```
 
-* System dependencies
+That's it.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## References
+- [rails/actioncable - github](https://github.com/rails/rails/tree/master/actioncable)
+- [Getting started with Rails 5's ActionCable and websockets](http://nithinbekal.com/posts/rails-action-cable/)
