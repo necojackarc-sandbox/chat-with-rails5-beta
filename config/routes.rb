@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
+
+  root "sessions#new"
+
+  resources :sessions, only: %i(new create)
+  resources :messages, only: %i(index create)
 end
