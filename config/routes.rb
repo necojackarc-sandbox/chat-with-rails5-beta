@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
+  match "/websocket", to: ActionCable.server, via: %i(get post)
 
   root "sessions#new"
 
